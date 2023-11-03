@@ -277,6 +277,24 @@ public final class Almarhum {
 }
 
 ```
+**PENJELASAN:**
+- Mendefinisikan Variabel:
+Kode mendefinisikan sejumlah variabel instance yang mewakili berbagai atribut individu almarhum seperti NIK, nama, domisili, tanggal lahir, tanggal meninggal, tempat meninggal, penyebab meninggal, tempat pemakaman, ID staf, dan NIK keluarga.
+
+- Konstruktor Almarhum:
+Konstruktor ini digunakan untuk membuat objek Almarhum dengan menginisialisasi semua atribut individu almarhum sesuai dengan nilai yang diberikan saat objek dibuat.
+
+- Metode-Metode untuk Interaksi dengan Database:
+Kelas Almarhum memiliki sejumlah metode yang memungkinkan Anda untuk berinteraksi dengan database, termasuk:
+createAlmarhum(): Untuk menambahkan data individu almarhum ke database.
+updateAlmarhum(): Untuk mengupdate data individu almarhum yang ada di database.
+deleteAlmarhum(): Untuk menghapus data individu almarhum dari database.
+readAlmarhum(): Untuk membaca dan menampilkan data individu almarhum dari database.
+Dalam setiap metode ini, kelas Almarhum terhubung ke database dengan memanggil Database.connect(), mengeksekusi pernyataan SQL yang sesuai, dan menggunakan objek Database.preparedStatement untuk mengirim parameter ke dalam pernyataan SQL. Hasil dari operasi tersebut, baik berhasil atau gagal, akan ditampilkan kepada pengguna melalui dialog JOptionPane.
+
+- Metode Getters:
+Kelas ini juga memiliki sejumlah metode getter (misalnya, getNik(), getNama()) yang memungkinkan Anda untuk mengambil nilai dari atribut individu almarhum.
+
   
 3. Staff.java
 ```java
