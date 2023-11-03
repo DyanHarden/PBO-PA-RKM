@@ -43,7 +43,7 @@ package model;
 import java.sql.*;
 
 
-public class Database {
+public final class Database {
     public static Connection connection = null;
 
     public static Statement statement;
@@ -98,7 +98,7 @@ package model;
 import javax.swing.JOptionPane;
 
 
-public class Almarhum {
+public final class Almarhum {
     private final String nik;
     private final String nama;
     private final String domisili;
@@ -163,7 +163,7 @@ public class Almarhum {
         return nikKeluarga;
     }
 
-    public void createAlmarhum(){
+    public final void createAlmarhum(){
         try {
             Database.connect();
             String query = "INSERT INTO almarhum VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -186,7 +186,7 @@ public class Almarhum {
             JOptionPane.showMessageDialog(null, "Gagal menambahkan data almarhum!" + e);
         }
     }
-     public boolean updateAlmarhum(){
+     public final boolean updateAlmarhum(){
         try {
             Database.connect();
             String query = "UPDATE almarhum SET Nama = ?, Domisili = ?, Tanggal_lahir = ?, Tanggal_meninggal = ?, Tempat_meninggal = ?, Penyebab_meninggal = ?, Tempati_pemakaman = ?, Staff_ID_staff = ?, Keluarga_NIK_Keluarga = ? WHERE NIK = ?";
@@ -212,7 +212,7 @@ public class Almarhum {
         return false;
      }
 
-     public void deleteAlmarhum(){
+     public final void deleteAlmarhum(){
         try {
             Database.connect();
             String query = "DELETE FROM almarhum WHERE nik = ?";
@@ -227,7 +227,7 @@ public class Almarhum {
         }
      }
 
-     public void readAlmarhum(){
+     public final void readAlmarhum(){
         try {
             Database.connect();
             String query = "SELECT * FROM almarhum";
@@ -250,6 +250,7 @@ public class Almarhum {
         }
      }
 }
+
 ```
   
 - Staff.java
@@ -260,7 +261,7 @@ package model;
 import javax.swing.JOptionPane;
 
 
-public class Staff {
+public final class Staff {
     private String idStaff;
     private String nama;
     private String noTelp;
@@ -275,27 +276,27 @@ public class Staff {
         this.password = password;
     }
 
-    public String getIdStaff(){
+    public final String getIdStaff(){
         return idStaff;
     }
 
-    public String getNama(){
+    public final String getNama(){
         return nama;
     }
 
-    public String getNoTelp(){
+    public final String getNoTelp(){
         return noTelp;
     }
 
-    public String getUsername(){
+    public final String getUsername(){
         return username;
     }
 
-    public String getPassword(){
+    public final String getPassword(){
         return password;
     }
 
-    public boolean checkLogin(String username, String password){
+    public final boolean checkLogin(String username, String password){
         try {
             String query = "SELECT * FROM staff WHERE Username = ? AND Password = ?";
             Database.connect();
@@ -323,7 +324,7 @@ public class Staff {
 package model;
 
 
-public class Keluarga {
+public final class Keluarga {
     private final String nik;
     private final String nama;
     private final String jenisKelamin;
@@ -352,7 +353,7 @@ public class Keluarga {
         return hubungan;
     }
 
-    public void createKeluarga(){
+    public final void createKeluarga(){
         try {
             String query = "INSERT INTO keluarga (NIK_Keluarga, Nama, Jenis_Kelamin, Hubungan_dengan_Almarhum) VALUES (?, ?, ?, ?)";
             Database.connect();
@@ -362,13 +363,12 @@ public class Keluarga {
             Database.preparedStatement.setString(3, getJenisKelamin());
             Database.preparedStatement.setString(4, getHubungan());
             Database.preparedStatement.executeUpdate();
-            Database.disconnect();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public void updateKeluarga(){
+    public final void updateKeluarga(){
         try {
             String query = "UPDATE keluarga SET Nama = ?, Jenis_Kelamin = ?, Hubungan_dengan_almarhum = ? WHERE NIK_Keluarga = ?";
             Database.connect();
@@ -378,26 +378,24 @@ public class Keluarga {
             Database.preparedStatement.setString(3, getHubungan());
             Database.preparedStatement.setString(4, getNik());
             Database.preparedStatement.executeUpdate();
-            Database.disconnect();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public void deleteKeluarga(){
+    public final void deleteKeluarga(){
         try {
             String query = "DELETE FROM keluarga WHERE NIK_Keluarga = ?";
             Database.connect();
             Database.preparedStatement = Database.connection.prepareStatement(query);
             Database.preparedStatement.setString(1, getNik());
             Database.preparedStatement.executeUpdate();
-            Database.disconnect();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
     
-    public void checkNikKeluarga(String nikKeluarga){
+    public final void checkNikKeluarga(String nikKeluarga){
         try {
             String query = "SELECT * FROM keluarga WHERE NIK_Keluarga = ?";
             Database.connect();
