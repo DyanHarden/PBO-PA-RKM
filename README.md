@@ -361,6 +361,25 @@ public final class Staff {
     }  
 }
 ```
+**PENJELASAN**
+- Mendefinisikan Variabel:
+Kode mendefinisikan beberapa variabel instance yang mewakili atribut dari seorang staf, seperti ID staf, nama, nomor telepon, nama pengguna (username), dan kata sandi (password).
+
+- Konstruktor Staff:
+Konstruktor ini digunakan untuk membuat objek Staff dengan menginisialisasi ID staf dan nama sesuai dengan nilai yang diberikan saat objek dibuat. Namun, perlu diperhatikan bahwa variabel noTelp, username, dan password tidak diinisialisasi di dalam konstruktor.
+
+- Metode Getters:
+Kelas ini memiliki sejumlah metode getter (misalnya, getIdStaff(), getNama()) yang memungkinkan Anda untuk mengambil nilai dari atribut staf.
+
+- Metode checkLogin():
+Metode ini digunakan untuk melakukan otentikasi atau pemeriksaan login. Metode ini menerima dua parameter, yaitu username dan password, yang merupakan informasi yang akan digunakan untuk memeriksa keberhasilan login.
+Metode membuat pernyataan SQL yang memeriksa apakah ada baris di tabel staf yang memiliki Username dan Password yang sesuai dengan parameter yang diberikan.
+Kemudian, metode menghubungkan ke database dengan memanggil Database.connect(), dan mengeksekusi pernyataan SQL dengan menggunakan objek Database.preparedStatement. Hasil dari pernyataan SQL tersebut disimpan dalam objek Database.resultSet.
+Jika hasil dari pernyataan SQL menunjukkan adanya baris yang sesuai, maka metode akan menampilkan pesan "Login berhasil!" melalui JOptionPane dan mengembalikan true untuk menandakan keberhasilan login.
+Jika tidak ada baris yang sesuai, metode akan menampilkan pesan "Login gagal!" melalui JOptionPane dan mengembalikan false untuk menandakan kegagalan login.
+Jika terjadi kesalahan dalam proses otentikasi, pesan kesalahan akan dicetak ke konsol.
+Metode selalu mengembalikan false jika ada kesalahan dalam proses otentikasi atau jika tidak ada baris yang sesuai
+
 
 4. Keluarga.java
 ```java
