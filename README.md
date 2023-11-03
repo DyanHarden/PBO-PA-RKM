@@ -15,6 +15,15 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 ## Flowchart
 
 ## ERD
+- **LOGICAL ERD**
+
+![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/9724da8c-abd3-44be-ae2d-329b4909c5ae)
+
+- **RELATIONAL ERD**
+
+![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/e595c8fb-61ea-486d-953b-65b1f166e24e)
+
+
 
 ## Hirarki Kelas
 
