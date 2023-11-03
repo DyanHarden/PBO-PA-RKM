@@ -1,5 +1,9 @@
 # Manajemen Data Rukun Kematian Warga
 
+**ANGGOTA KELOMPOK 7**
+- Muhammad Dian Nurdiansyah (2209116022)
+- Siti Solikah Yosi Karinda (2209116029)
+
 Program ini dibuat agar diperuntukan sebagai manajemen data rukun kematian warga yang dirancang untuk membantu mengumpulkan, menyimpan, dan mengelola informasi terkait kematian penduduk suatu wilayah atau komunitas. Program ini dapat digunakan oleh instansi pemerintah atau organisasi yang bertanggung jawab untuk mengelola data rukun kematian warga.
 
 Pendataan kematian warga merupakan bagian penting dari sistem informasi yang diperlukan oleh pemerintah, lembaga kesehatan dan masyarakat sekitar untuk berbagai tujuan, seperti perencanaan kebijakan, pengendalian penyakit, analisis, dan penelitian kesehatan. Pendataan kematian warga mencerminkan pentingnya informasi yang akurat tentang kematian warga dalam berbagai aspek kehidupan masyarakat. Data ini tidak hanya membantu dalam pengambilan keputusan, tetapi juga memberikan pandangan yang lebih baik tentang kualitas hidup dan kesejahteraan populasi suatu daerah. 
@@ -13,6 +17,9 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 - [ScreenShoot Output Program](#screenshoot-output-program)
 
 ## Flowchart
+
+![pa](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/2970cf7d-f65f-4ea2-99ec-0610800b7c42)
+
 
 ## ERD
 - **LOGICAL ERD**
@@ -411,9 +418,18 @@ public class Keluarga {
 
 ## Screenshoot Output Program
 - Login.java
-  
+
+![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/1bbd8d04-3dac-497d-b406-b268917759b3)
+
 - Pilihan.java
+
+![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/f993fd8f-90a6-433a-a4a2-486560e0cfd1)
 
 - AlmarhumCRUD.java
 
+![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/bab4e245-e54d-4b05-9fce-611e6c3bd9d9)
+
 - KeluargaCRUD.java
+
+![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/e7b065be-2039-46c9-9b63-bd2f825e7289)
+
