@@ -9,8 +9,8 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 - [Flowchart](#flowchart)
 - [ERD](#erd)
 - [Hirarki Kelas](#hirarki-kelas)
-- [Penjelasan Output Program](#penjelasan-output-program)
 - [Penjelasan Source Code](#penjelasan-source-code)
+- [ScreenShoot Output Program](#screenshoot-output-program)
 
 ## Flowchart
 
@@ -18,16 +18,9 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 
 ## Hirarki Kelas
 
-## Penjelasan Output Program
-
-Tambahkan tautan ke demo online atau video demo proyek Anda di sini.
-
 ## Penjelasan Source Code
 
 Jelaskan secara detail apa yang proyek Anda lakukan, mengapa itu penting, dan apa yang Anda pelajari selama pengembangannya. Juga, sertakan teknologi utama yang digunakan.
 
-
-
-```markdown
-![Tangkapan Layar 1](sumber/gambar/tangkapan-layar-1.png)
+## Screenshoot Output Program
 
