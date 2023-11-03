@@ -7,10 +7,16 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 ## Tabel Isi
 
 - [Flowchart](#flowchart)
+- [ERD](#erd)
+- [Hirarki Kelas](#hirarki-kelas)
 - [Penjelasan Output Program](#penjelasan-output-program)
 - [Penjelasan Source Code](#penjelasan-source-code)
 
 ## Flowchart
+
+## ERD
+
+## Hirarki Kelas
 
 ## Penjelasan Output Program
 
