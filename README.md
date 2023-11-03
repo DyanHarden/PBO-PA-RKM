@@ -37,7 +37,7 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 ## Penjelasan Source Code
 
 **PACKAGE MODEL**
-- Database.java
+1. Database.java
 ```java
 package model;
 import java.sql.*;
@@ -91,7 +91,32 @@ public final class Database {
 
 ```
 
-- Almarhum.java
+**PENJELASAN:**
+
+- Import Library:
+Kode mengimpor pustaka Java java.sql.* yang diperlukan untuk berinteraksi dengan database.
+
+- Mendefinisikan Variabel:
+Kode mendefinisikan variabel Connection, Statement, PreparedStatement, dan ResultSet yang akan digunakan untuk berinteraksi dengan database.
+Mendefinisikan konstanta untuk host database, nama database, nama pengguna, dan kata sandi.
+
+- Konstruktor Database:
+Konstruktor ini digunakan untuk menginisialisasi kelas Database.
+Di dalam konstruktor, kode mencoba untuk memuat driver MySQL dengan Class.forName("com.mysql.cj.jdbc.Driver").
+
+- Metode connect():
+Metode ini digunakan untuk membuat koneksi ke database MySQL.
+Membentuk URL koneksi dengan menggabungkan host, nama database, username, dan kata sandi.
+Kemudian, kode mencoba untuk mendapatkan koneksi ke database menggunakan DriverManager.getConnection() dan mengembalikan koneksi tersebut.
+
+- Metode disconnect():
+Metode ini digunakan untuk memutuskan koneksi ke database.
+Kode mencoba untuk menutup koneksi yang sudah ada dengan connection.close().
+
+- Metode getConnection():
+Metode ini seharusnya mengembalikan koneksi, tetapi kode yang ada hanya mengembalikan pengecualian dengan pesan "Not supported yet." dan sepertinya belum diimplementasikan.
+
+2. Almarhum.java
 ```java
 package model;
 
@@ -253,7 +278,7 @@ public final class Almarhum {
 
 ```
   
-- Staff.java
+3. Staff.java
 ```java
 package model;
 
@@ -319,7 +344,7 @@ public final class Staff {
 }
 ```
 
-- Keluarga.java
+4. Keluarga.java
 ```java
 package model;
 
