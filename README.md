@@ -475,6 +475,22 @@ public final class Keluarga {
 }
 
 ```
+**PENJELASAN**
+- Mendefinisikan Variabel:
+Kode mendefinisikan beberapa variabel instance yang mewakili atribut individu anggota keluarga, seperti NIK (Nomor Induk Keluarga), nama, jenis kelamin, dan hubungan dengan almarhum.
+
+- Konstruktor Keluarga:
+Konstruktor ini digunakan untuk membuat objek Keluarga dengan menginisialisasi atribut NIK, nama, jenis kelamin, dan hubungan sesuai dengan nilai yang diberikan saat objek dibuat.
+
+- Metode Getters:
+Kelas ini memiliki sejumlah metode getter (misalnya, getNik(), getNama()) yang memungkinkan Anda untuk mengambil nilai dari atribut anggota keluarga.
+
+- Metode-Metode untuk Interaksi dengan Database:
+Kelas Keluarga memiliki beberapa metode yang memungkinkan Anda untuk berinteraksi dengan database, termasuk:
+createKeluarga(): Untuk menambahkan data anggota keluarga ke database.
+updateKeluarga(): Untuk mengupdate data anggota keluarga yang sudah ada di database.
+deleteKeluarga(): Untuk menghapus data anggota keluarga dari database.
+checkNikKeluarga(): Untuk memeriksa apakah NIK keluarga sudah terdaftar dalam database.
 
 ## Screenshoot Output Program
 - Login.java
