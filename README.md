@@ -30,9 +30,9 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 
 ![image](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/e595c8fb-61ea-486d-953b-65b1f166e24e)
 
-
-
 ## Hirarki Kelas
+
+![hk](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/308e2e95-d801-43db-b169-603ecb24ed14)
 
 ## Penjelasan Source Code
 
