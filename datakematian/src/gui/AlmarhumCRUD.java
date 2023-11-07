@@ -13,9 +13,7 @@ import model.Database;
 
 public class AlmarhumCRUD extends javax.swing.JFrame {
 
-    /**
-     * Creates new form KeluargaCRUD
-     */
+
     public AlmarhumCRUD() {
         initComponents();
         table();
@@ -340,9 +338,9 @@ public class AlmarhumCRUD extends javax.swing.JFrame {
         String domisili = jTextField3.getText();
         String tanggalLahir = jTextField4.getText();
         String tanggalMeninggal = jTextField5.getText();
-        String tempatMeninggal = jTextField6.getText();
-        String penyebabMeninggal = jTextField7.getText();
-        String tempatPemakaman = jTextField8.getText();
+        String tempatMeninggal = jTextField7.getText();
+        String penyebabMeninggal = jTextField8.getText();
+        String tempatPemakaman = jTextField9.getText();
         String idStaff = jComboBox1.getSelectedItem().toString();
         String nikKeluarga = jTextField6.getText();
         Almarhum almarhum = new Almarhum(nik, nama, domisili, tanggalLahir, tanggalMeninggal, tempatMeninggal, penyebabMeninggal, tempatPemakaman, idStaff, null);
@@ -370,9 +368,9 @@ public class AlmarhumCRUD extends javax.swing.JFrame {
             String domisili = jTextField3.getText();
             String tanggalLahir = jTextField4.getText();
             String tanggalMeninggal = jTextField5.getText();
-            String tempatMeninggal = jTextField6.getText();
-            String penyebabMeninggal = jTextField7.getText();
-            String tempatPemakaman = jTextField8.getText();
+            String tempatMeninggal = jTextField7.getText();
+            String penyebabMeninggal = jTextField8.getText();
+            String tempatPemakaman = jTextField9.getText();
             Object idStaff = tabel.getValueAt(row, 8);
             Object nikKeluarga = tabel.getValueAt(row, 9);
 
@@ -448,9 +446,7 @@ public class AlmarhumCRUD extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hapusButtonActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -516,7 +512,4 @@ public class AlmarhumCRUD extends javax.swing.JFrame {
     private javax.swing.JButton tombolresetdata;
     // End of variables declaration//GEN-END:variables
 
-    private void setText(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-}
+
