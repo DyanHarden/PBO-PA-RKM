@@ -13,9 +13,7 @@ import model.Keluarga;
 
 public class KeluargaCRUD extends javax.swing.JFrame {
 
-    /**
-     * Creates new form AlmarhumCRUD
-     */
+
     public KeluargaCRUD() {
         initComponents();
         table();
