@@ -18,8 +18,7 @@ Pendataan kematian warga merupakan bagian penting dari sistem informasi yang dip
 
 ## Flowchart
 
-![pa](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/2970cf7d-f65f-4ea2-99ec-0610800b7c42)
-
+![FLOWCHARTRKMFIX](https://github.com/DyanHarden/PBO-PA-RKM/assets/94899238/47f011e1-031c-4a7a-b388-34e00cc31829)
 
 ## ERD
 - **LOGICAL ERD**
